@@ -1,4 +1,3 @@
-
 import "./App.css";
 import { useState } from "react";
 
@@ -28,7 +27,7 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px" }}>
+    <div className="container">
       <h1>Certificate Verification System</h1>
 
       <input
@@ -45,11 +44,36 @@ function App() {
       {error && <p style={{ color: "red" }}>{error}</p>}
 
       {certificate && (
-        <div style={{ marginTop: "20px" }}>
-          <p><b>Name:</b> {certificate.studentName}</p>
-          <p><b>Course:</b> {certificate.course}</p>
-          <p><b>Grade:</b> {certificate.grade}</p>
-          <p><b>Valid:</b> {certificate.isValid ? "Yes" : "No"}</p>
+        <div className="certificate">
+        <div className="watermark">BLOCKCHAIN VERIFIED</div>
+
+          <div className="seal">VERIFIED</div>
+
+          <h2>CERTIFICATE OF COMPLETION</h2>
+          <div className="center-text">
+          <p className="subtitle">This is to certify that</p>
+
+          <h3>{certificate.studentName}</h3>
+
+          <p className="subtitle">
+            has successfully completed the course
+          </p>
+          </div>
+
+          <h3>{certificate.course}</h3>
+
+          <div className="certificate-details">
+            <p><b>Grade:</b> {certificate.grade}</p>
+            <p><b>Issue Date:</b> {certificate.issueDate}</p>
+            <p>
+              <b>Status:</b>{" "}
+              <span className={certificate.isValid ? "valid" : "invalid"}>
+                {certificate.isValid
+                  ? "VALID CERTIFICATE"
+                  : "INVALID CERTIFICATE"}
+              </span>
+            </p>
+          </div>
         </div>
       )}
     </div>
