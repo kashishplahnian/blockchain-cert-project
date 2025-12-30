@@ -16,13 +16,21 @@ const certificates = {
     issueDate: "2025-01-01",
     isValid: true
   },
-  "2": {
-    certificateId: 2,
+  "1": {
+    certificateId: 1,
     studentName: "Rachna",
-    course: "B.Tech CSE",
+    course: "M.A English",
     grade: "A",
-    issueDate: "2025-01-01",
-    isValid: false
+    issueDate: "2002-01-01",
+    isValid: true
+  },
+  "2": {
+    certificateId: 1,
+    studentName: "Ajay",
+    course: "B.Sc Nautical Science",
+    grade: "A",
+    issueDate: "2000-01-01",
+    isValid: true
   }
 };
 
