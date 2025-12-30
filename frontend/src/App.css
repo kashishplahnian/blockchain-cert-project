@@ -43,4 +43,65 @@ button {
 button:hover {
   background-color: #4338ca;
 }
+.certificate {
+  margin-top: 30px;
+  padding: 30px;
+  border: 3px solid #2c2c2c;
+  border-radius: 10px;
+  background: #fffdf7;
+  text-align: center;
+  position: relative;
+}
 
+.certificate h2 {
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.certificate .subtitle {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.certificate-details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.certificate-details p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.seal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  border: 2px solid #333;
+  border-radius: 50%;
+  padding: 10px 14px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.valid {
+  color: green;
+  font-weight: bold;
+}
+
+.invalid {
+  color: red;
+  font-weight: bold;
+}
+
+.watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 60px;
+  color: rgba(0, 0, 0, 0.08);
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+}
